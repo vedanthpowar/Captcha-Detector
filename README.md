@@ -1,4 +1,4 @@
-# Handwritten-Hindi-Word-Recognizer
+# Captcha-Detector
 ## MOSAIC (IIT BHU Electronics Engineering Society's Technical Fest's Event based on Image processing and Machine learning)
 ### Problem Statement for Round 1 
 ### Task 
