@@ -30,21 +30,9 @@ Then we use boundingRect function of cv2 module to get the co-ordinates ot the b
 Once we got the segmented word region as a separate image, we need to work on character segmentation which is the most important part of the entire model.
 
 
-                     rotated image                                  word segmented image
-<img src="images/3.png" width="400" >                                  <img src="images/4.png" width="400" > 
-
-
 For this, we used vertical projection method but for applying this method we need to remove header line first. Once the header line is removed, we can easily separate the characters from the word because there was black space present between the characters, which we can use to segment individual characters.
 
 Coming to header line removal part, we used two copies of the segmented word image that we obtained using extract_roi method. By using one of the copied image, we remove all white pixels which were present within 1/3 portion of the image from the top by equating their pixel values to zero. Thus, we removed the header line using this simple strategy. Now, the header line is removed we can apply vertical projection method. We start iterating to each column. The segmented region between two characters would have the entire column pixel density as zero. And therefore, while iterating to each column, we keep a track of the columns whose pixel density is entirely zero. Once, we obtained the list of that columns, we use extract_roi function to extract the characters on the basis of the columns from the other copied image of the segmented word we obtained previously.
-
-                     word segmented image                                  header removed image
-<img src="images/4.png" width="400" >                                  <img src="images/5.png" width="400" >
-
-
-### Segmented images of characters
-
-<img src="images/seg_1.png" width="100">   <img src="images/seg_2.png" width="100">   <img src="images/seg_3.png" width="100">   <img src="images/seg_4.png" width="100">   <img src="images/seg_5.png" width="100">   <img src="images/seg_6.png" width="100">
 
 We stored the segmented character images and then we load our custom trained CNN model, which was trained over 21 different characters whose data we collected from UC Irvine machine learning dataset repository available on web, to classify these segmented character.
 
@@ -53,7 +41,6 @@ Because of this large dataset and the model architecture of 3 Million parameters
 
 Finally, we predicted the labels for the segmented characters and printed them as our final output of the entire model.
 
-<img src="images/6.png" width="400">
 
 ### Features of the model 
  - It can handle rotated word, angle < 80 degree
