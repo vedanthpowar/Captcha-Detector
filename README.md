@@ -45,12 +45,10 @@ Finally, we predicted the labels for the segmented characters and printed them a
 ![image](https://user-images.githubusercontent.com/77714299/163319503-043bb2f9-173a-46ad-85a8-6c9152a9e67f.png)
 
 ### Features of the model 
- - It can handle rotated word, angle < 80 degree
  - It can work on blurry images 
- - It can work on images with shadows and background noises
  - The only necessary condition for model to work is slight space between characters
- - Size of character set is 21 
+ - Size of character set is 26
  - We avoid similar characters to improve model performance like –
-    [ख, ग, (झ, ड), (ञ, ज) (ट, ठ),(द, ढ), ण, (ध, घ), (ब, व, ष), (भ, म), ल, श, ह]
+    [X, M, (i, j), (n, h) (y, Y),(q, q), K, (D,O)), (U,V), (M, N)]
  - The character set – 
-      [ क, घ, च, छ, ज, ठ, ड, त, थ, द, न, प, फ, म, य, र, व, स, क्ष, त्र, ज्ञ ]
+      ["A","1","2","3","4","5","6","7","B","E","F","G","H","I","N","O","P","R","S","T","Z","Y","g","h","t","w"]
