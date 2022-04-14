@@ -5,7 +5,7 @@
 In today's ever-evolving & fast-paced world, we at Udyam 
 believe it is essential for us to stay in touch with our roots. Problem Statement for round 1 is basedexactly on this. Handwritten Captcha Detection. Your task is to automatically detect what is written in the Captcha given to you. Generally simple captchas consist of numbers and letters in a distorted format, but there is a twist to the PS. Instead of numbers, the captcha will consist of letters and emojis (from a predefined set - the link to which is given in the resources). 
 
-![image](https://user-images.githubusercontent.com/77714299/163319693-4461b49f-4c76-464e-8860-e84067a0f4bc.png)
+![image](https://user-images.githubusercontent.com/77714299/163320925-650e1f62-7410-473c-8bfa-f4fe603520a4.png)
 
 You can access the full problem statement pdf file and model.h5
 
